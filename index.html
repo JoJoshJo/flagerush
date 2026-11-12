@@ -43,7 +43,9 @@
   .stack{display:flex;flex-direction:column;gap:12px}
   .link{background:none;border:0;color:var(--muted);font:inherit;font-size:15px;padding:12px;cursor:pointer;align-self:center}
 
-  .hero-flags{display:flex;gap:8px;margin:28px 0 30px}
+  .intro{text-align:center}
+  .intro p{text-wrap:balance}
+  .hero-flags{display:flex;gap:8px;margin:28px 0 30px;justify-content:center}
   .hero-flags img{width:56px;height:42px;border-radius:6px;object-fit:cover;box-shadow:0 0 0 1px rgba(0,0,0,.06)}
 
   label{display:block;font-size:14px;font-weight:600;margin:18px 0 8px}
@@ -108,9 +110,11 @@
 
   <!-- HOME -->
   <section class="screen on" id="home">
-    <div class="eyebrow">International Education Week</div>
-    <h1>Flag Rush</h1>
-    <p>How many flags of the world do you know? Play solo or challenge a friend.</p>
+    <div class="intro">
+      <div class="eyebrow">International Education Week</div>
+      <h1>Flag Rush</h1>
+      <p>How many flags of the world do you know? Play solo or challenge a friend.</p>
+    </div>
     <div class="hero-flags" id="heroFlags"></div>
     <div class="stack">
       <button class="btn primary" data-go="soloSetup">Play solo <small>20 flags · 60s</small></button>
@@ -122,9 +126,11 @@
 
   <!-- SOLO SETUP -->
   <section class="screen" id="soloSetup">
-    <div class="eyebrow">Solo</div>
-    <h2>Beat the clock</h2>
-    <p>20 flags, 60 seconds. Get <b id="goalTxt"></b> right to win a prize.</p>
+    <div class="intro">
+      <div class="eyebrow">Solo</div>
+      <h2>Beat the clock</h2>
+      <p>20 flags, 60 seconds. Get <b id="goalTxt"></b> right to win a prize.</p>
+    </div>
     <label for="soloName">Your first name</label>
     <input id="soloName" maxlength="20" autocomplete="given-name" placeholder="e.g. Amara">
     <div class="spacer"></div>
@@ -136,9 +142,11 @@
 
   <!-- DUEL SETUP -->
   <section class="screen" id="duelSetup">
-    <div class="eyebrow">Duel</div>
-    <h2>Same flags. Who's faster?</h2>
-    <p>Both players type the same code, then press Start together. You get the same 20 flags. Most right wins. If it's a tie, the faster time wins.</p>
+    <div class="intro">
+      <div class="eyebrow">Duel</div>
+      <h2>Same flags. Who's faster?</h2>
+      <p>Both players type the same code, then press Start together. You get the same 20 flags. Most right wins. If it's a tie, the faster time wins.</p>
+    </div>
     <label for="duelName">Your first name</label>
     <input id="duelName" maxlength="20" autocomplete="given-name" placeholder="e.g. Kofi">
     <label for="duelCode">Duel code</label>
